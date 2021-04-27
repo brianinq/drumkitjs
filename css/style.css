@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 72.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.kick-pad, .snare-pad, .hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #0b4ba0;
+}
+
+.kick-pad.active {
+  background: #ff3c00;
+}
+
+.snare-pad {
+  background: #a00b80;
+}
+
+.snare-pad.active {
+  background: #ff3c00;
+}
+
+.hihat-pad {
+  background: #29a00b;
+}
+
+.hihat-pad.active {
+  background: #ff3c00;
+}
+
+.active {
+  background: #ff3c00 !important;
+}
+
+.kick-track, .snare-track, .hihat-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.hihat, .snare, .kick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: #575656;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+.pad {
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+.play {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #fff;
+  background: #575656;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+  cursor: pointer;
+}
+
+.tempo + p {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */

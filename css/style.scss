@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 72.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+svg{
+    pointer-events: none;
+}
+
+.kick-pad, .snare-pad,.hihat-pad {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+.kick-pad{
+    background: #0b4ba0 ;
+    &.active {
+        background: #ff3c00;
+    }
+
+}
+.snare-pad{
+    background: #a00b80 ; 
+    &.active {
+        background: #ff3c00;
+    }
+
+}
+.hihat-pad {
+    background: #29a00b ;
+    &.active {
+        background: #ff3c00;
+    }
+}
+.active {
+    background: #ff3c00 !important;
+}
+.kick-track, .snare-track,.hihat-track{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.hihat, .snare, .kick{
+    display: flex;
+}
+.main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0 2rem;
+
+    button {
+        padding: 1rem;
+        border: none;
+        background: #575656;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5 ease;
+    }
+}
+.pad {
+   transition: all 0.5 ease; 
+}
+.play {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    color: #fff;
+    background: #575656;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+select {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.tempo {
+    margin: 3rem;
+    width: 30%;
+    cursor: pointer;
+
+    & + p {
+        font-size: 2rem;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@keyframes playTrack {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
